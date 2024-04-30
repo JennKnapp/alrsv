@@ -1,0 +1,7 @@
+fire
+numpy
+pandas
+scikit-learn>=0.24
+matplotlib
+seaborn
+pysam

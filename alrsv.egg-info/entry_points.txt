@@ -1,0 +1,2 @@
+[console_scripts]
+alrsv = alrsv.command_line:main
