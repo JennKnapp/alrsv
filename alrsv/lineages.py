@@ -105,7 +105,7 @@ def plot_lineages(sample_results, sample_names, img_path=None, all_lins=False):
     )
     plt.xlabel('Frequency in sample')
     plt.xticks(rotation=30, ha="right", rotation_mode="anchor")
-    plt.ylabel('Influenza A Lineage')
+    plt.ylabel('RSV A Lineage')
     # plt.tight_layout()
     if img_path is not None:
         plt.subplots_adjust(bottom=0.3, left=0.6)

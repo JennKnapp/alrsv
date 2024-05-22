@@ -70,12 +70,12 @@ def extract_all_mutations(node, target_clade=None):
                 branch_mutations = node["branch_attrs"]["mutations"]
                 if "nuc" in branch_mutations:
                     for mutation in branch_mutations["nuc"]:
-                        ref_nt = mutation[0]
-                        position = int(mutation[1:-1]) # - 106 # for ToBRFV
-                        alt_nt = mutation[-1]
-                        if position >= 1:
-                            new_mutation = f"{ref_nt}{position}{alt_nt}"
-                            mutations.add(new_mutation)
+                       # ref_nt = mutation[0]
+                       # position = int(mutation[1:-1]) # - 106 # for ToBRFV
+                       # alt_nt = mutation[-1]
+                       # if position >= 1:
+                       #     new_mutation = f"{ref_nt}{position}{alt_nt}"
+                        mutations.add(mutation)
             return list(mutations)  # Return mutations if target clade is found
 
     if "children" in node:
